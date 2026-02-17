@@ -139,3 +139,21 @@
 
 })(jQuery);
 
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("disclaimer").classList.add("collapsed");
+});
+
+function toggleText() {
+    var text = document.getElementById("disclaimer");
+    var btn = document.getElementById("readMoreBtn");
+
+    text.classList.toggle("collapsed");
+
+    if (text.classList.contains("collapsed")) {
+        btn.innerHTML = "Read More";
+    } else {
+        btn.innerHTML = "Read Less";
+    }
+}

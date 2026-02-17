@@ -7,7 +7,24 @@
     transition: opacity .5s ease-out, visibility 0s linear .5s;
     z-index: 99999;
 }
+#disclaimer {
+    margin-bottom: 0;
+    font-size: 13px;
+}
 
+.collapsed {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;   /* Sirf 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.read-more-btn {
+    color: #1c97c6;
+    cursor: pointer;
+    font-weight: 600;
+    margin-left: 5px;
+}
 /* Column spacing (extra breathing space) */
 .service .row > div {
     margin-bottom: 25px;
